@@ -1,0 +1,15 @@
+import java.applet.*;
+import java.awt.*;
+import java.net.*;
+public class AudioDemo extends Applet
+{
+   private AudioClip clip;
+   private AppletContext context;
+   public void init()
+   {
+      context = this.getAppletContext();
+      String audioURL = this.getParameter("audio");
+      if(audioURL == null)
+      {
+         audioURL = "default.au";
+      }
