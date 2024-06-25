@@ -1,0 +1,15 @@
+import java.io.Reader;
+import java.io.FileReader;
+
+class Main {
+    public static void main(String[] args) {
+
+        // 
+        char[] array = new char[100];
+
+        try {
+            //
+            Reader input = new FileReader("input.txt");
+
+            //
+            System.out.println("?  " + input.ready());
