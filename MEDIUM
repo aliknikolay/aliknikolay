@@ -1,0 +1,23 @@
+enum Size {
+   SMALL {
+
+      //toString()SMALL
+      public String toString() {
+        return "The size is small.";
+      }
+   },
+
+   MEDIUM {
+
+     //toString()MEDIUM
+      public String toString() {
+        return "The size is medium.";
+      }
+   };
+}
+
+class Main {
+   public static void main(String[] args) {
+      System.out.println(Size.MEDIUM.toString());
+   }
+}
