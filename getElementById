@@ -1,0 +1,10 @@
+<canvas id="ex1" width="500" height="100" style="border: 1px solid #cccccc;">HTML5 Canvas not supported</canvas>
+<script>
+var canvas  = document.getElementById("ex1");
+var context = canvas.getContext("2d");
+context.fillStyle  ="#66ff66";
+context.strokeStyle="#990000";
+context.lineWidth  = 5;
+
+context.fillRect  (5, 5, 50, 50);
+context.strokeRect(5, 5, 50, 50);
